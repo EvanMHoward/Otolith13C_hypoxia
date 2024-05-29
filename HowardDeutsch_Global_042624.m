@@ -83,7 +83,6 @@ load InterSpecies_b.mat
 vnames={'temp','salt','o2','po4','aou'};
 load WOA; %World ocean atlas 2018
 load GLO; %GLODAPv2 2016 climatology
-load Goc; %WOA grids
 %Climatological AOU
 o2sat=O2sol(WOA.salt,WOA.temp);
 WOA.aou=o2sat-WOA.o2;

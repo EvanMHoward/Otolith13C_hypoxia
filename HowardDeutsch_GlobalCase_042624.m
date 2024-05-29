@@ -12,7 +12,7 @@
 
 %% Prepare workspace
 addpath('.../Helper_Scripts_and_files/'); %Location of helper scripts
-load Goc; %WOA gridding
+Goc.Tedge=[-4:1:36];Goc.Tcent=[-3.5:1:35.5];
 load InterSpecies_b.mat; %Isotope observations
 load d3D.mat; %modeled global d13Coto distributions
 %% End-member d13C and pCO2 distributions (Fig 1)
@@ -118,13 +118,13 @@ dxw=0.2;bed=[(-25-dxw/2):dxw:(10+dxw/2)];bcent=[-25:dxw:10];
 %change these only if similarly changed and reprocessed in the Global 
 %calculation script
 
-%Generate weighted average across depth
+%Generate weighted average
 v=WOAsub.v3d;id=isnan(d13oto_3d_AEave);
 if swloadpdf~=1
 for i=1:size(WOAsub.temp,1) %longitude
     i
     for j=1:size(WOAsub.temp,2) %latitude
-        clearvars binW binWint wtv ctZ;
+        clearvars binW binWint ctZ;
         for k=1:size(WOAsub.temp,3) %depth    
             binW(k,:)=squeeze(wtPDFall(i,j,k,:));%raw d13 distribution weights
         end
