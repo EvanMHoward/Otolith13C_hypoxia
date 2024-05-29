@@ -34,12 +34,7 @@ end
 clear var i 
 
 % other fields
-basindx=basindx(:,:,Iz);
-botindx=botindx(:,:,Iz);
-a3d=a3d(:,:,Iz);
 v3d=v3d(:,:,Iz);
-F3d=F3d(:,:,Iz);
-
 
 WOAsub=v2struct;
 
