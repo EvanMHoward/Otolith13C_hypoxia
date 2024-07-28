@@ -1,4 +1,8 @@
 # Otolith13C_hypoxia
+
+***NOT FOR PUBLIC RELEASE*** 
+_This repository is currently provided for the peer review only_. It will be made publicly available on acceptance of the associated manuscript.
+
 Evan Howard, ehoward2@uw.edu
 
 Overview:
@@ -6,7 +10,7 @@ Scripts and processed variables for 'Hypoxia traits imprinted in otolith δ13C f
 
 No express or implied warranty: These scripts, helper functions, and data tables are provided "as is," without warranty or guarantee of any kind.
 
-Use and acknowledgement: 
+Reuse and acknowledgement: Please see LICENSE for terms of resuse. Acknowledgement of the associated manuscript ('Hypoxia traits imprinted in otolith δ13C from individual to global scales', Scientific Reports, 2024) or script tools (E. Howard and C. Deutsch. 2024. Otolith13C_hypoxia scripts, Matlab) is appreciated.
 
 File descriptions:
 
