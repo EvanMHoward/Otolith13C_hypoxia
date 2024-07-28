@@ -1,8 +1,12 @@
 # Otolith13C_hypoxia
+Evan Howard, ehoward2@uw.edu
+
 Overview:
 Scripts and processed variables for 'Hypoxia traits imprinted in otolith δ13C from individual to global scales' (Howard and Deutsch 2024). The versions of record for the manuscript are from April 26th, 2024. Any future versions with substantive changes will be added to this repository with new dates in the file name. All databases and scripts are for use with Matlab, but are largely interoperable with the freeware GNU Octave.
 
-No express or implied warranty: These scripts, helper functions, and data tables are provided "as is," without warranty or guarantee of any kind. 
+No express or implied warranty: These scripts, helper functions, and data tables are provided "as is," without warranty or guarantee of any kind.
+
+Use and acknowledgement: 
 
 File descriptions:
 
