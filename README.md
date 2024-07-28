@@ -18,8 +18,22 @@ a. Allometry.mat is a table of the interspecific trend with size in allometric s
 b. BloodPint.mat is a table of experimentally determined internal and experimental inorganic carbonate system measurements various fishes.
 c. C13speciation.m calculates the expected isotopic composition for each inorganic carbonate system chemical species based on the the measured isotopic composition of any other.
 d. Deutsch2020Phist.mat is the interspecific distribution of Vh from respirometry, and two estimates of PhiCrit (~SMS) based on different biogeographic methods.
-e. F5d13pdfZ_ct and F5d13pdf_ct are processed fields called by HowardDeutsch_GlobalCase, to save users time in regenerating plotted fields if they retain the same calculation assumptions chosen by the authors in HowardDeutsch_Global.
+e. F5d13pdfZ_ct.mat and F5d13pdf_ct,mat are processed fields called by HowardDeutsch_GlobalCase, to save users time in regenerating plotted fields if they retain the same calculation assumptions chosen by the authors in HowardDeutsch_Global.
 f. Gtr.mat is a trait database, and includes both distributions of hypoxia traits as well as the species-specific hypoxia trait estimates and underlying experimental metabolic rate and critical partial pressure of oxygen data. Specifically, Gtr.Par contains the individual species (named in Gtr.Par.Species_unq) trait parameters, including Eo (Gtr.Par.Eo), Vh (Gtr.Par.Ao; Ao-1=Vh), and SMS (Gtr.Par.phic; phic=SMS), as well as other metrics such as Emet (the metabolic temperature sensitivity only) and αD (the oxygen demand coefficient). The varied parameters available are more completely described in Deutsch et al. 2020 (https://doi.org/10.1038/s41586-020-2721-y) and Penn and Deutsch 2024 (https://doi.org/10.1098/rstb.2022.0487). Gtr.Par.P includes the underlying critical partial pressure of O2 data across temperature and mass (...P.temp, ...P.mass, …P.pcrit) and associated trait estimates (…P.est: Columns 1 and 2 are Vh-1 and Eo, respectively) and uncertainties and goodness of fit metrics (…P.err, …pval, …r2, etc.). Gtr.Par.M contains equivalent data and metrics based on metabolic rate alone rather than the ratio of oxygen supply and demand (hypoxia). The other top-level fields in Gtr represent binning vectors and empirical distributions of those traits across the trait database, which are called by the archived analysis scripts (see HowardDeutsch_Global for use examples). The hypoxia trait epislon is not included, and those interested are referred to Deutsch et al. 2022 (https://doi.org/10.1073/pnas.2201345119).
 g. HaulInfo.mat includes NOAA haul documentation, animal size, and metadata associated with the Pacific Cod data called by HowardDeutsch_PacificCodCase.
 h. HowardDeutsch_BloodMeasurements processes BloodPint to generate estimates of Pw, Pint, and Pmet.
-i. HowardDeutsch_
+***i. HowardDeutsch_MakeDatabaseStructures...placeholder. This script generates some databases in their expected forms (FishBase trophic levels and GLODAP inorganic carbonate system hydrographic variables) but is not fully functional at this time. Specifically, this script will be superceded by a version which calls a new laoding script that downloads and processes World Ocean Atlas data into the form expected by the scripts. The WOA data is too large to archive in this repository.
+j. HowardDeutsch_OMminDIC_corr calculates the average difference between organic matter composition and seawater DIC for the species considered in this manuscript.
+k. HowardDeutsch_PCod_IsotopeIDextraction associates otolith isotopic information with NOAA haul and animal size information.
+l. HowardDeutsch_PCod_LMA generates length, mass, age relationships for the Pacific Cod dataset.
+m. HowardDeutsch_d13Ccorrelation generates the seawater 13C_DIC multiple linear regression with hydrographic variables.
+n. InterSpecies_b is otolith isotopic data from the ~20 species analyzed in the manuscript.
+o. Isotopes.xlsx is the Pacific cod otolith data as an Excel table prior to ingestion by other scripts.
+p. O2sol.m calculates the oxygen solubility based on Garcia and Gordon 1992 (as coded by Robert Hamme, UVic).
+q. Temperature.xlsx is the Pacific cod temperature data as an Excel table prior to ingestion by other scripts.
+r. TrophicLevelTable.mat is the FishBase trophic level database, prior reformating by HowardDeutsch_MakeDatabaseStructures.
+s. carbeq.m calculates inorganic carbonate system speciation.
+t. co2_diffusion.m calculates the diffusion coefficient of CO2 (g). 
+u. dfdp.m
+
+
