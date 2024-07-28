@@ -34,6 +34,9 @@ q. Temperature.xlsx is the Pacific cod temperature data as an Excel table prior 
 r. TrophicLevelTable.mat is the FishBase trophic level database, prior reformating by HowardDeutsch_MakeDatabaseStructures.
 s. carbeq.m calculates inorganic carbonate system speciation.
 t. co2_diffusion.m calculates the diffusion coefficient of CO2 (g). 
-u. dfdp.m
+u. dfdp.m calculates the Jacobian for least squares regression.
+v. pH_T.m recalculates pH for changes in temperature.
+w. subset_WOA.m subsets processed WOA fields to specific depth ranges and variables of interest.
+x. v2struct.m merges vectors into a single Matlab structure.
 
 
