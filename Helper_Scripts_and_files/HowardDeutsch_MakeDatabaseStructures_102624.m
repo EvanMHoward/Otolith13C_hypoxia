@@ -98,8 +98,7 @@ end
 %download and process the relevant WOA data. See
 %'Driver_HowardEtAl_otoliths_WOA.m' for additional details and to change
 %default filepaths.
-%NOTE: WOA concentrations are reported in mmol m-3, but this script
-%converts all chemical units to umol kg-1 for compatability with other
+%NOTE: All chemical units are umol kg-1 for compatability with other
 %scripts used in this analysis.
 clear all; clc;
 run('Driver_HowardEtAl_otoliths_WOA.m');
