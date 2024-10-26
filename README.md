@@ -44,7 +44,14 @@ g. HaulInfo.mat includes NOAA haul documentation, animal size, and metadata asso
 
 h. HowardDeutsch_BloodMeasurements processes BloodPint to generate estimates of Pw, Pint, and Pmet.
 
-***i. HowardDeutsch_MakeDatabaseStructures...placeholder. This script generates some databases in their expected forms (FishBase trophic levels and GLODAP inorganic carbonate system hydrographic variables) but is not fully functional at this time. Specifically, this script will be superceded by a version which calls a new laoding script that downloads and processes World Ocean Atlas data into the form expected by the scripts. The WOA data is too large to archive in this repository.
+***i. HowardDeutsch_MakeDatabaseStructures. This script downloads and processes databases used by other scripts in this repository (FishBase trophic levels, GLODAP inorganic carbonate system hydrographic variables, and World Ocean Atlas climatological hydrographic fields). Please modify this script to set appropriate filepaths, and run prior to any other scripts. The following helper scripts are called only by HowardDeutsch_MakeDatabaseStructures and calls therein:
+    i.1 Driver_HowardEtAl_otoliths downloads WOA18 climatological data onto a WOA09 33-depth level grid, and processes it for use by other scripts in this repository.
+    i.2 combine_woa_data combines monthly, seasonal, and annual fields according to the highest resolution avaialble at each depth level
+    i.3 create_woa_netcdf generates the a single netcdf file from the several files for individual parameters and time periods that constitute the WOA repository
+    i.4 download_woa downloads the constituent WOA files from the repository
+    i.5 grid_area calculates the area associated with each WOA grid cell
+    i.6 O2pressure calculates the depth-corrected partial pressure of oxygen from reported concentrations.
+    i.7 sw_pres is used to estimate pressure from depth
 
 j. HowardDeutsch_OMminDIC_corr calculates the average difference between organic matter composition and seawater DIC for the species considered in this manuscript.
 
