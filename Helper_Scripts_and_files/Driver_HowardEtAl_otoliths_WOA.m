@@ -7,6 +7,10 @@
 % Author: H. Frenzel, UW-CICOES / NOAA-PMEL
 %
 % Date: August 27, 2024
+%
+%No express or implied warranty: This script, as well as any supplementary 
+% scripts or data tables provided for its operation, is provided "as is"
+% without warranty or guarantee of any kind. 
 
 data_dir = './WOA'; % on the local drive; adapt as needed
 vnames_in = {'temperature'; 'salinity'; 'oxygen'; 'phosphate'};
